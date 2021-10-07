@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Winter</title>
+        <link href="fontawesome-free-5.15.3-web/css/all.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300&display=swap" 
+        rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Grey+Qo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="resources/css/style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    </head>
+    <body>
+        <header class="header" id="len">
+            <li class="anr"><i class="android fas fa-bars"></i></li> 
+      
+            <img class="logo" src="resources/img/logo.png" alt="logo">
+            <ul class="ul_nav">
+            
+                <li  class="navbar" id='home'><a class="hic_a" href="#">Home</a>
+                    <i class="angleright fas fa-angle-right"></i>
+                    <ul class="sub"> 
+                       <li class="sub_li"><a class="hic_a" href="#">Travel Agency</a></li>  
+                        <li class="sub_li"><a class="hic_a" href="#">Winter Holidays</a></li>  
+                        <li class="sub_li"><a class="hic_a" href="#">Summer Holidays</a></li> 
+                        <li class="sub_li"><a class="hic_a" href="#">City Tours</a></li> 
+                        <li class="sub_li"><a class="hic_a" href="#">Wine Tours</a></li>  
+                        <li class="sub_li" ><a class="hic_a" href="#">Vacation Showcase</a></li>  
+                        <li class="sub_li"><a class="hic_a" href="#">Landing</a></li>  
+                        <li class="sub_li"><a class="hic_a" href="#">New Year Trip</a></li>  </ul>     
+                </li>
+                <!-- --------- -->
+                <li class="navbar" id='pages'><a class="hic_a" href="#">Pages</a><i class="angleright fas fa-angle-right"></i>
+                     <ul class="sub">
+                     <li class="sub_li"><a class="hic_a" href="#">About US</a></li>  
+                     <li class="sub_li"><a class="hic_a"href="#">What We Ofer</a></li>  
+                     <li class="sub_li"><a class="hic_a" href="#">Our Team</a></li> 
+                     <li class="sub_li"><a class="hic_a"href="#">Contact Us</a></li>  
+                     <li class="sub_li"><a class="hic_a"href="#">FAG Page</a></li> 
+                     <li class="sub_li"><a class="hic_a" href="#">Coming Soon</a></li> 
+                     </ul> 
+                </li>
+                <!-- ------------ -->
+                <li class="navbar" id='destration'><a class="hic_a" href="#">Destinations</i></a><i class="angleright fas fa-angle-right"></i>
+                    <ul class="sub">
+                    <li class="sub_li"><a class="hic_a" href="#">Destination List</a></li> 
+                    <li class="sub_li"><a class="hic_a"href="#">Destination Slider</a></li>
+                    <li class="sub_li"><a class="hic_a" href="#">Destination Itern</a></li>
+                    </ul>
+                </li>
+                <!-- ------ -->
+                <li class="navbar" id ='Tour'><a class="hic_a" href="#">Tour</i></a><i class="angleright fas fa-angle-right"></i>
+                    <ul class="sub">
+                        <li class="sub_li"><a class="hic_a" href="#">Tour</a></li> 
+                        <li class="sub_li"><a class="hic_a" href="#">Standard List</a></li> 
+                        <li class="sub_li"> <a class="hic_a" href="#">Gallery List</a></li>
+                    </ul>
+                </li>
+                <!-- -------- -->
+                <li  class="navbar" id='Blog'><a class="hic_a"  href="#">Blog</a><i class="angleright fas fa-angle-right"></i>
+                    <ul class="sub">
+                           <li class="sub_li" ><a class="hic_a" href="#">Blog Masonry</a></li>
+                           <li class="sub_li"><a class="hic_a" href="#">Blog Standard</a></li>
+                           <li class="sub_li"><a class="hic_a" href="#">Post Types</a></li>           
+                    </ul>
+                </li>
+                <!-- --- -->
+                 <li class="navbar" id='Shop'><a class="hic_a" href="#">Shop</a><i class="angleright fas fa-angle-right"></i>
+                    <ul class="sub">
+                  <li class="sub_li"><a class="hic_a" href="#">Product List</a></li>
+                  <li class="sub_li"><a class="hic_a" href="#">Product Single</a></li>
+                  <li class="sub_li"><a class="hic_a" href="#">Shop Layout </a></li>
+                  <li class="sub_li"><a class="hic_a" href="#">Shop Page</a> </li>
+                    </ul>
+                    </li> 
+                <li class="navbar" id='elemet'><a class="hic_a" href="#">Elemet</a><i class="angleright fas fa-angle-right"></i>                             
+                     <ul class="sub">
+                  <li class="sub_li"><a class="hic_a" href="#" >Heading</a></li>  
+                  <li class="sub_li"><a class="hic_a" href="#">Columns</a></li>
+                  <li class="sub_li"><a class="hic_a" href="#">Section Title</a></li>
+                  <li class="sub_li"><a  class="hic_a" href="#">Contact Us</a></li>    
+                  <li class="sub_li"><a class="hic_a" href="#">FAG Page</a></li>     
+                     </ul> 
+                </li> 
+           
+                
+                <li><i id="timkiem" class="no fas fa-search"></i>
+                <form action="" class="searchform">
+                    <input type="text" class="search" placeholder="search">
+                    <i class=" tim fas fa-search"></i>
+                </div>
+                </form>
+                </li>
+               <li id="buy"><i  class="no fas fa-shopping-cart"></i>
+            <p class="sell">No products in the cart</p></li> 
+               <li> <i id="chiulun"  class="no fas fa-bars"></i></li> 
+         
+            
+    
+        <div class="menu-modal-container">
+            <i class="close fas fa-times"></i>
+        <div class="menu-modal-in4">
+            <img src="resources/img/logo.png" alt="" class="menu-modal-img">
+            <img src="resources/img/sidearea-img-2.png" alt="" class="modal-img">
+            <img src="resources/img/sidearea-img.jpg" alt="" class="menl-img menu-modal-img-shadow ">
+            
+        </div>
+       
+        <p class="menu-modal-text">Lorem ipsum dolor sit amet, consectetuer adipis cing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis theme natoque
+        </p>
+        <p class="menu-modal-header">Follow Me</p>
+        <div class="menu-modal-social">
+
+            <a href="" class="menu-modal-link">
+                <i class="menu-modal-icon fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="menu-modal-link">
+                <i class="menu-modal-icon fab fa-instagram"></i>
+            </a>
+            <a href="" class="menu-modal-link">
+                <i class="menu-modal-icon fab fab fa-pinterest-p"></i>
+            </a>
+            <a href="" class="menu-modal-link">
+                <i class="menu-modal-icon fab fa-twitter"></i>
+            </a>
+        </div>
+    </div>
+    <script>
+        let hey= document.querySelector('#chiulun');
+        let see= document.querySelector('.menu-modal-container');
+        let close=document.querySelector('.close');
+        var timkiem=document.querySelector('#timkiem');
+        var serch=document.querySelector('.searchform');
+        let andr=document.querySelector('.android');
+        let nav=document.querySelector('.ul_nav');
+        hey.onclick = () =>{
+            // hey.classList.toggle('fa-times');
+            see.style.display='block';
+        }
+        close.onclick = () =>{
+            see.style.display='none';
+        }
+        timkiem.onclick = () =>{
+            timkiem.classList.toggle('fa-times');
+           serch.classList.toggle('active');       
+        }
+        window.onscroll = () =>{
+            see.style.display='none';
+            document.querySelector('.searchform').style.display='none';
+            
+        }
+        andr.onclick = () =>{
+            andr.classList.toggle('fa-times');
+            nav.classList.toggle('active');
+        }
+        
+
+
+         </script>
+
+            </ul>
+         
+    </header> 
+   
+    <!-- anh nen ne -->
+   
+    <div class="khunganh">
+    <div class = "hoa">
+        <img src="resources/img/pexels-photo-848618.jpeg" alt="" class="anh">
+        <div class="text">
+          <div class="topanh"> From Alps</div>
+          <div class="ndanh">Snow Adventur</div>  
+          <div class="chunhamnew">Lorem ipsum dolor sit amet, consectetuer adipiscing alit. Aenean comodo liguta eget<br> dolor. Aenean massa. Cum sociis Theme </div>      
+         </div>
+    </div>
+    <div class = "hoa">
+        <img src="resources/img/pexels-photo-352093.jpeg" alt="" class="anh">
+        <div class="text">
+            <div class="topanh">Enjoy Your </div>
+            <div class="ndanh">Winter Vacations</div>
+            <div class="chunhamnew">Lorem ipsum dolor sit amet, consectetuer adipiscing alit. Aenean comodo liguta eget <br>dolor. Aenean massa. Cum sociis Theme </div>
+        </div>
+    </div>
+            <button onclick="next()"></button>
+        </div>
+            <script>
+                var index=0;
+    var i;
+    var slide=document.getElementsByClassName("hoa");        
+    function showSlide(){
+    for( i =0;i<slide.length;i++){
+    slide[i].style.display="none";
+    }
+    slide[index].style.display="block";
+    }
+    showSlide();
+    function next(){
+    index++;
+    if(index==2){
+    index=0;
+    }
+    showSlide(index);       
+    }
+    setInterval(
+    function haha(){
+    next();
+    },6000
+    )
+            </script>  
+            <!-------------- MAIN SLIDE------------------ -->
+     <div class="fullhop">              
+    <div class="toanhop">
+        <div class="hopanh" >
+                <img class="anhhop" src="resources/img/tour-featured-img-19.jpg" alt="">
+        </div>
+        <div class="phanxanh">
+            <li class="icon far fa-calendar"><i class="chuicon">1</i></li>              
+            <li class="icon fas fa-user"><i class="chuicon">13+</i></li>               
+            <li class="icon fas fa-map-marker-alt"><i class="chuicon">Skiing</i></li>
+        </div>
+        <div class="comment">
+    <a href="#" class="tenhop">Kids Ski School</a>
+       </div>
+        <div class="gioithieu">Lorem ipsum dolor sit amet, <br>consectetuer adipiscing el.… </div>
+        <div class="danhgia">
+            <i class="gia">$800</i>                        
+            <i class="gia    fas fa-star-half-alt">6.5</i>
+            <i class="gia">Good</i>
+        </div>    
+   
+    </div>
+    <div class="toanhop">
+        <div class="hopanh" >
+                <img class="anhhop" src="resources/img/hang.jpg" alt="">
+        </div>
+        <div class="phanxanh">
+            <li class="icon far fa-calendar"><i class="chuicon">1</i></li>              
+            <li class="icon fas fa-user"><i class="chuicon">13+</i></li>               
+            <li class="icon fas fa-map-marker-alt"><i class="chuicon">Skiing</i></li>
+        </div>
+        <div class="comment"> <a href="#" class="tenhop">Snow Surfing</a></div>
+        <div class="gioithieu">Lorem ipsum dolor sit amet, <br>consectetuer adipiscing el.… </div>
+                <div class="danhgia">
+                    <i class="gia">$3600</i>                        
+                    <i class="gia    fas fa-star">7.3</i>
+                    <i class="gia">Good</i>
+                </div>
+    </div>
+    <div class="toanhop">
+            <div class="hopanh" >
+                    <img class="anhhop" src="resources/img/tour-featured-img-16.jpg" alt="">
+            </div>
+            <div class="phanxanh">
+                <li class="icon far fa-calendar"><i class="chuicon">1</i></li>              
+                <li class="icon fas fa-user"><i class="chuicon">13+</i></li>               
+                <li class="icon fas fa-map-marker-alt"><i class="chuicon">Skiing</i></li>
+            </div>
+            <div class="comment"><a href="#" class="tenhop">Magic Of Italy</a></div>
+            
+            <div class="gioithieu">Lorem ipsum dolor sit amet, <br>consectetuer adipiscing el.… </div>
+                    <div class="danhgia">
+                        <i class="gia">$8200</i>                        
+                        <i class="gia    fas fa-star">8.5</i>
+                        <i class="gia">Super</i>
+                    </div>
+    </div>  
+    <div class=" toanhop">                
+            <div class="hopanh" >
+                    <img class="anhhop" src="resources/img/tour-featured-img-14.jpg" alt="">
+            </div>
+            <div class="phanxanh">
+                <li class="icon far fa-calendar"><i class="chuicon">1</i></li>              
+                <li class="icon fas fa-user"><i class="chuicon">13+</i></li>               
+                <li class="icon fas fa-map-marker-alt"><i class="chuicon">Skiing</i></li>
+            </div>
+            <div class="comment">   <a href="#" class="tenhop">Active Winter</a></div>
+         
+            <div class="gioithieu">Lorem ipsum dolor sit amet, <br>consectetuer adipiscing el.… </div>
+                    <div class="danhgia">
+                        <i class="gia">$720</i>                        
+                        <i class="gia    fas fa-star-half-alt">6.8</i>
+                        <i class="gia">Good</i>
+                    </div>   
+    </div>
+    <div class=" toanhop">        
+            <div class="hopanh" >
+                     <img class="anhhop" src="resources/img/tour-featured-img-15.jpg" alt="">
+            </div>
+            <div class="phanxanh">
+                <li class="icon far fa-calendar"><i class="chuicon">1</i></li>              
+                <li class="icon fas fa-user"><i class="chuicon">13+</i></li>               
+                <li class="icon fas fa-map-marker-alt"><i class="chuicon">Skiing</i></li>
+            </div>
+            <div class="comment"><a href="#" class="tenhop">Winter Action</a></div>
+            
+            <div class="gioithieu">Lorem ipsum dolor sit amet, <br>consectetuer adipiscing el.… </div>
+                    <div class="danhgia">
+                        <i class="gia">$900</i>                        
+                        <i class="gia    fas fa-star">7.4</i>
+                        <i class="gia">Good</i>
+                  </div>           
+    </div>
+ </div>    
+
+                           <!-- =============TRY NOW============= -->
+<div class="sport">
+        
+            <p class="top">Try Now</p>
+            <h1 class="tensport">Winter Sports</h1>
+      
+      <iframe class="video" src="https://www.youtube.com/embed/z9Ul9ccDOqE"  >
+             </iframe>
+            <p class="chunham">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.<br> 
+                Aenean massa. Cum sociis Theme natoque penatibus et magnis dis sit amet, consectetuer adipiscing elit Etiam rhoncus.<br>
+                 Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit ame</p>
+            <div class="btun">
+                 <button class="btn"><p class="view">View More</p></button>
+            </div>
+
+    </div>
+    <!-- TOPREVIEW -->
+<div class="review">
+    <img class="imgnen" src="resources/img/tour-featured-img-15.jpg">
+    <h1 class="tenreview">Top Review</h1>
+    <p class="chunhamtop">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa Cum</p>
+  <div class="userreview">
+     <button class="user1">
+         <img src="resources/img/user-img-6.png" alt="" class="anhuser">
+         <p class="trongtam">Beautiful Holland</p>
+         <p class="iconuser"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+        <div class="gioithieu" id='gt'> Te utar uvlues iwqodit tas, vut et nihc egam yubulas. Ei euvy</div>
+         <p class="tenuser">Carol Silva</p>
+     </button>
+     <button class="user1">
+        <img src="resources/img/user-img-5.png" alt="" class="anhuser">
+        <p class="trongtam">Barcelona</p>
+        <p class="iconuser"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+        <div class="gioithieu" id='gt'> Fa etor eviuas lwqedit tas, vut et nihc egam yubulas. Ei euvy</div>
+        <p class="tenuser">James Fishe</p>
+    </button>
+    <button class="user1">
+        <img src="resources/img/user-img-4.png" alt="" class="anhuser">
+        <p class="trongtam">Kaohsiung</p>
+        <p class="iconuser"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+        <div class="gioithieu" id='gt'> Fa etor eviuas lwqedit tas, vut et nihc egam yubulas. Ei euvy</div>
+        <p class="tenuser">Roger Brooks</p>
+    </button>
+    <button class="user2">
+        <img src="resources/img/user-img-2.png" alt="" class="anhuser">
+        <p class="trongtam">Taipei</p>
+        <p class="iconuser"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+           <div class="gioithieu" id='gt'> Fa etor eviuas lwqedit tas, vut et nihc egam yubulas. Ei euvy</div>
+        <p class="tenuser">Susan Day</p>
+    </button>
+    <button class="user2">
+        <img src="resources/img/user-img-7.png" alt="" class="anhuser">
+        <p class="trongtam">tarragona</p>
+        <p class="iconuser"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+        <div class="gioithieu" id='gt'> Fa etor eviuas lwqedit tas, vut et nihc egam yubulas. Ei euvy</div>
+        <p class="tenuser">Carl Moore</p>
+    </button>
+    <button class="user2">
+        <img src="resources/img/user-img-3.png" alt="" class="anhuser">
+        <p class="trongtam">Holland Canals</p>
+         <p class="iconuser"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></p>
+        <div class="gioithieu" id='gt'> Fa etor eviuas lwqedit tas, vut et nihc egam yubulas. Ei euvy</div>
+        <p class="tenuser">Ema Cooper</p>
+    </button>                              
+  </div>
+  <div class="radiogroup">
+    <input onclick="backbutton()" type="radio" name="radio-btn2" id="radio">
+    <input onclick="nextbutton()" type="radio" name="radio-btn2" id="radio">
+    <script>
+        var hienus1=document.getElementsByClassName("user1");
+        console.log(hienus1);
+        var hienus2=document.getElementsByClassName("user2");
+        console.log(hienus2);
+        function nextbutton(){
+            for( var i=0;i<hienus2.length;i++){
+            hienus2[i].style.display="block";
+            }
+            for(var i=0;i<hienus1.length;i++){
+            hienus1[i].style.display='none';}
+        }
+        function backbutton(){
+            for(i=0;i<hienus1.length;i++){
+                hienus1[i].style.display='block';
+            }
+            for(i=0;i<hienus2.length;i++){
+            hienus2[i].style.display='none';}
+        }   
+              
+    </script>
+</div>
+</div>
+<!-- ENJOYYOU------------>
+<div class="winterholiday">
+    <div class="contentholiday">
+        <p class="top">Enjoy Your</p>
+        <h1 class="tensport">Winter Holiday</h1>
+        <p class="chunham">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor lorem ipsum.</p>
+    </div>
+    <div class="anhholiday">
+        <div class="holiday__item">
+        <div class="holiday__item-icon">
+            <img class="holidayimg" src="resources/img/h1-custom-icon-img-1.png" alt="">
+        </div>
+          <div class="trongtam">
+            Restaurants
+        </div>
+           <div class="gioithieu">
+            Aenean commodo ligula eget dolor. Lorem ipsum
+       </div>
+       </div>
+     <div class="holiday__item">
+        <div class="holiday__item-icon">
+            <img class="holidayimg" src="resources/img/h1-custom-icon-img-2.png" alt="">
+        </div>
+          <div class="trongtam">
+            Sightseeing
+        </div>
+           <div class="gioithieu">
+            Aenean commodo ligula eget dolor. Lorem ipsum   
+        </div>
+        </div>
+
+
+    <div class="holiday__item">
+        <div class="holiday__item-icon">
+            <img class="holidayimg" src="resources/img/h1-custom-icon-img-3.png" alt="">
+        </div>
+          <div class="trongtam">
+            Shops & Boutiques
+        </div>
+           <div class="gioithieu">
+            Aenean commodo ligula eget dolor. Lorem ipsum
+        </div>
+    </div>
+    <div class="holiday__item">
+        <div class="holiday__item-icon">
+            <img class="holidayimg" src="resources/img/h1-custom-icon-img-4.png" alt="">
+        </div>
+        <div class="trongtam">
+            Where to Stay
+        </div>
+           <div class="gioithieu">
+            Aenean commodo ligula eget dolor. Lorem ipsum
+        </div>
+    </div>
+</div>
+</div> 
+<!-- Phan quang canh -->
+<div class="phanquangcanh">
+    <div class="all">
+        <div class="boc">
+            <img class="anhmenber"src="resources/img/our-team-img-7-1.jpg" alt="">
+            <div class="membergiothieu">
+                <div class="membername">Kaohsiung</div>
+                <div class="chunhamkh">Sed ut perspiciatis unde omnis iste natus error sit voluptatem lorem</div>
+                <div class="memberitem">
+                    <i class="member__itemicon fab fa-facebook-f"></i>
+                    <i class="member__itemicon fab fa-instagram"></i>
+                    <i class="member__itemicon fab fab fa-pinterest-p"></i>          
+                    <i class="member__itemicon fab fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+<!-- ========= -->
+        <div class="boc">
+            <img class="anhmenber"src="resources/img/our-team-img-6-1.jpg" alt="">
+            <div class="membergiothieu">
+                <div class="membername">ALex Joyer</div>
+                <div class="chunhamkh">Sed ut perspiciatis unde omnis iste natus error sit voluptatem lorem</div>
+                <div class="memberitem">
+                    <i class="member__itemicon fab fa-facebook-f"></i>
+                    <i class="member__itemicon fab fa-instagram"></i>
+                    <i class="member__itemicon fab fab fa-pinterest-p"></i>          
+                    <i class="member__itemicon fab fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+<!-- ======== -->
+        <div class="boc">
+            <img class="anhmenber" src="resources/img/our-team-img-9.jpg" alt="">
+            <div class="membergiothieu">
+                <div class="membername"> David Killer</div>
+                <div class="chunhamkh">Sed ut perspiciatis unde omnis iste natus error sit voluptatem lorem</div>
+                <div class="memberitem">
+                    <i class="member__itemicon fab fa-facebook-f"></i>
+                    <i class="member__itemicon fab fa-instagram"></i>
+                    <i class="member__itemicon fab fab fa-pinterest-p"></i>          
+                    <i class="member__itemicon fab fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+    
+<!-- ======== -->
+        <div class="boc">
+            <img class="anhmenber" src="resources/img/our-team-img-8-1.jpg" alt="">
+            <div class="membergiothieu">
+                <div class="membername">Salar Brew</div>
+                <div class="chunhamkh">Sed ut perspiciatis unde omnis iste natus error sit voluptatem lorem</div>
+                <div class="memberitem">
+                    <i class="member__itemicon fab fa-facebook-f"></i>
+                    <i class="member__itemicon fab fa-instagram"></i>
+                    <i class="member__itemicon fab fab fa-pinterest-p"></i>          
+                    <i class="member__itemicon fab fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+        
+         <div class="bocnggio">
+             
+            <div class="number-item">
+                <p class="so">452</p>
+                <div class="phuluc"> Tourlists</div>
+            </div>
+        <!-- === -->        
+            <div class="number-item">
+                <p class="so">120</p>
+                <div class="phuluc"> Years </div>
+            </div>
+        <!-- === -->
+            <div class="number-item">
+               <p class="so">283</p>
+                <div class="phuluc"> Cottages</div>
+            </div>
+       <!-- === -->
+        
+            <div class="number-item">
+                <p class="so">197</p>
+                <div class="phuluc">Restaursnts</div>
+            </div>
+           
+        </div>
+        </div>
+    </div>  
+    <script src="vendors/count.js"   ></script>
+    <script>
+        $(document).ready(
+            function(){
+                $('.so').countUp(
+                    {
+                        delay:10,
+                        time:1000
+
+                    }
+                )
+            }
+        )
+         
+        
+    </script>   
+        <!-- ========================================================== -->
+
+<div class="content-common">
+    <p class="top">Choose Your</p>
+    <h1 class="tensport">Winter Resort</h1>
+    <p class="chunham">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor lorem ipsum. </p>
+</div>
+    <div class="fullressort">
+        <div class="resortplace">
+             <img src="resources/img/destinations-featured-img-8-1.jpg" alt="" class="resortimg">
+            <p class="resorttext">Slovenia</p>
+        </div>
+        <div class="resortplace">
+                <img src="resources/img/destinations-featured-img-9-1.jpg" alt="" class="resortimg">
+               <p class="resorttext">France</p>
+         </div>
+        <div class="resortplace">
+            <img src="resources/img/destinations-featured-img-10-1.jpg" alt="" class="resortimg">
+            <p class="resorttext">Switzerland</p>
+        </div>
+        <div class="mausao"><i class="sao fas fa-star"></i></div>
+    </div>
+<div class="tongthanhcuoi">
+    <div class="footer">
+            <div class="footer__logo">
+                <img src="resources/img/logo.png" alt="" class="footer__logo-img">
+            </div>
+            <div class="chunhamft">
+                Lorem ipsum dolor sit ametco nsec te tuer adipiscing elitae
+            </div>
+            <a href="mailto:setsail@qode.com" class="footer__link">
+                <i class="footer-icon far fa-envelope"></i>
+                setsail@qode.com
+            </a>
+            <a href="tel:1%20562%20867%205309" class="footer__link">
+                <i class="footer-icon fas fa-phone-alt"></i>
+                1 562 867 5309
+            </a>
+            <a href="https://www.google.rs/maps/place/Charging+Bull/@40.7055242,-74.0133806,20z/data=!4m5!3m4!1s0x0:0xc7db393ae1eff521!8m2!3d40.7055537!4d-74.0134436" class="footer__link">
+                <i class="footer-icon fas fa-map-marker-alt"></i>
+                Broadway & Morris St, New York
+            </a>
+    </div>
+        <div class="footeritem">
+            <div class="footer__heading">Our Recent Posts</div>
+            <ul class="footerplace-list">
+                <li class="footerplaceitem">
+                    <a href="" class="footer__placename">Visit Thailand, Bali And China</a>
+                    <a href="" class="footer__placeday">September 5, 2021</a>
+                </li>
+                <li class="footerplaceitem">
+                    <a href="" class="footer__placename">The Sound Of Our Jungle</a>
+                    <a href="" class="footer__placeday">September 5, 2021</a>
+                </li>
+                <li class="footerplaceitem">
+                    <a href="" class="footer__placename">New Year, New Resolutions!</a>
+                    <a href="" class="footer__placeday">September 5, 2021</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-item">
+            <div class="footer__heading">Subscribe to our Newsletter</div>
+            <p class="footer__subheading">Etiam rhoncus. Maecenas temp us, tellus eget condimentum rho</p>
+            <div class="footer__contact">
+                <form action="">
+                    <div class="footer__contact-wrap">
+                        <i class="fticon fas fa-user"></i>
+                        <input class="footer__contact-input" type="text" required placeholder="Name">  
+                    </div>
+                    <div class="footer__contact-wrap">
+                        <i class="fticon far fa-envelope"></i>
+                        <input class="footer__contact-input" type="email" required placeholder="Email">  
+                    </div>
+        
+                         <input class="footer__contact-subcrice" type="submit" value="Subcribe">
+                 </form>
+        </div>
+    </div>
+    <div class="footer-item">
+        <div class="footer__heading">Our Instagram</div>
+        <p class="footer__subheading">Aliquam lorem ante, dapibus inviver raqui feugiat a, tellus. Phasellus null</p>
+    </div>
+
+</div>
+<div class="footer__bottom">
+    Powered by @ <a href="#" class="footer__bottom-link">Qode Interactive 2018</a>
+    </div>
+
+</body>
+ <!-- load -->
+ <div class="phanload">
+     <div class="doc">
+    <i class=" do fas fa-crow"></i>
+    <i class=" trang fas fa-shopping-basket"></i>
+
+    <script>
+        $('.do').click(function(){
+        $('html').animate(
+            {
+                scrollTop:0
+            },500
+        )
+        })
+    </script>
+</div>
+</div>
+</html>   
+         
+  

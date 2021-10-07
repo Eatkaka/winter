@@ -1,0 +1,1493 @@
+/* ///////////HEADER */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.angleright{display: none;}
+body{
+    max-width: 100%;
+    height: 100%;
+}
+.anr{
+    display: none;
+}
+
+html{
+    width:100%;
+    height: 100%;
+    font-family: 'Lato',sans-serif;
+    font-size: 20px;
+    background-color: #ffffff;
+    text-rendering: optimizeLegibility;}
+.header{
+    border: 1px ridge rgb(246, 250, 246);
+    height: 80px;
+    width: 100%;
+background-color: #fff;
+    padding: 0 20px;
+    display: flex;
+    z-index: 10;
+    position: fixed;
+}
+     rendering cach hien thi chu len web
+
+     /***************************STICKY*/
+     /* .sticky{
+         position: fixed;
+         top:0;
+         width: 100%;
+         background-color: #fff;
+         left: 0;
+         z-index: 999; */
+     
+     /*************************/
+.logo{
+    width: 50%;
+    height: 20%;
+    flex: 1;
+}
+.ul_nav {
+    list-style: none;
+    display:flex;
+    margin-right:5px;
+   height: 100%;
+    align-items: center;  
+    flex:2;
+    position: relative;
+    z-index: 10;
+} 
+.navbar{
+    padding-top: 25px;
+    height: 100%;
+    width: 70%;
+    text-align: center;
+    z-index: 10;
+}
+@keyframes drop-down {
+    from{
+        opacity: 0;
+        transform: translateX(0)
+    }
+    to{
+        opacity: 1;
+        transform:translateX(1);
+    }
+}
+.no{
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.hic_a{
+    text-decoration: none;    
+    position: relative; 
+    font-size: 100%;
+    font-weight: 600;
+    color: black;  
+    z-index: 10;
+}
+
+ .hic_a:before{
+    z-index: 10;
+    content: "";
+    position: absolute;
+    color: rgb(104, 206, 247); 
+    top:100%;
+    width: 0%;
+    border-bottom: 4px solid rgb(173, 55, 164);
+    transition: all 0.5s ease-in;    
+  }
+  .hic_a:hover:before {
+      z-index: 10;
+    width: 100%;
+    border-bottom: 4px solid rgb(104, 206, 247)}
+    .sub{
+        min-width: 180px;
+        list-style: none;
+        text-align:left;
+        /* border: 1px ridge rgb(175, 177, 175); */
+        font-size: 80%;
+        margin-top: 20px;
+        margin-left: 10px;
+        display: none;
+        padding-left: 20px;
+        position: absolute;
+        width: 0;
+        z-index: 10;
+        background-color: white;
+        animation-name: drop-down ;
+        animation-iteration-count: 999;
+
+    }
+    .sub_li{
+        padding: 5px 0px 5px 0px ;
+        z-index: 10;
+    }
+    .navbar:hover .sub{
+        display: block;
+        z-index: 10;
+    }
+    /* PHANLOAD________________ */
+    .phanload{
+      bottom: 80%;
+      position: absolute;
+       right: 0;
+    }
+    .do{
+        
+        border-radius: 2px;
+        padding: 11px 11px;
+        background-color: rgb(228, 23, 23);
+        z-index: 999;
+        color:#fff;
+        position: fixed;
+        right: 0;
+    }
+    .trang{
+        border-radius: 2px;
+        position: fixed;
+        z-index: 999;
+        margin-top: 50px;
+        right: 0;
+        padding: 12px 12px;
+        background-color: rgb(243, 240, 240);
+        color: rgb(228, 23, 23);
+    }
+    /* /////// daux*/
+    .menu-modal-container{
+        background-color:#fff;
+        z-index: 12;
+        top:0;
+        right: -30px;
+        width: 450px;
+        height: 800px;
+        position: absolute;
+        flex-direction: column;
+        display: none;
+    }
+    
+    .menu-modal-in4{
+        display: flex;
+        flex-direction: column;
+    }
+    .menu-modal-img{
+        margin-top: 40px;
+        width: 200px;
+        height: 70px;
+        margin-left: 130px;
+    }
+    .modal-img{
+        margin-top: 20px;
+        margin-left: 60px;
+        width: 350px;
+        height: 80px;
+    }
+    .menl-img{
+        margin-top: 10px;
+        width: 385px;
+        height: 237px;
+        margin-left: 40px;
+    }
+    .menu-modal-text{
+        font-family: 'Gluten',cursive;
+        font-size: 15px;
+        margin-left: 30px;
+    }
+    .menu-modal-header{
+        width: 100%;
+        margin:10px 180px;
+        text-justify: auto;
+        font-weight: 600;
+        
+    }
+    .menu-modal-social{
+        display: flex;
+        flex-direction: row;
+    }
+    .menu-modal-link{
+        color: palevioletred;
+       padding-left: 70px;
+       font-size: 30px;
+    }
+    .close{
+        margin-left: 90%; 
+        font-size: 30px;
+        cursor: pointer;
+     }
+   .sell{
+       position: absolute;
+       background-color: #fff;
+       width: 220px;
+       top:80px;
+       right: 5px;
+       border: rgb(12, 12, 12) 1px solid;
+       color: #000;
+       display: none;
+       padding:5px 5px;
+   
+   }
+    #buy:hover .sell{
+        display: block;
+        z-index: 999;      
+    }
+    #buy:hover{
+        color: rgb(104, 206, 247);
+    }
+   
+    .searchform{
+        position: absolute;
+        top:80px;
+        right: 30px;
+        display: none;
+    }
+    .searchform.active{
+        display: block;
+    }
+    .search{
+        padding: 5px 5px;
+        border-radius: 10px;
+    }
+    .tim{
+        position: absolute;
+        right: 10px;
+        top:5px;
+        cursor: pointer;
+    }
+    
+    /* ANH NEN NE*/
+   .anh{
+       height: 700px;
+       width: 100%;
+       z-index: 1;
+    position: absolute;
+    animation-name: zoom;
+    animation-duration: 6s;
+    animation-iteration-count: 9999;
+   }
+   .khunganh{
+       width: 100%;
+       height: 500px;
+       overflow: hidden;  
+       margin-bottom: 50px;  
+       position: relative;   
+   }
+   .topanh{
+       font-size: 80px;
+       font-family: 'Grey Qo', cursive;
+       font-weight: 700;
+   }
+   .ndanh{
+    font-family: 'Fleur De Leah', cursive;
+    font-size: 120px;
+    margin-bottom: 20px;
+    font-weight: 900;
+   }
+   .chunhamnew{
+       font-weight: bold;
+       margin-top: 50px;
+       font-size: 25px;
+       font-family: 'Gluten',cursive;
+   }
+   .text{
+       z-index: 3;
+    color:#fff;
+  font-size: 20px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  height: 400px;
+  top:100px;
+  animation-name: chu;
+  animation-duration: 6s;
+   animation-iteration-count: 9999; 
+   }
+  @keyframes zoom{
+      from{transform: scale(1);
+    }
+      to{transform: scale(1.1);
+    }
+  }
+  @keyframes chu{
+      from{
+          opacity: 0;
+          transform: translateY(30px);      }
+      to{
+          opacity: 1;
+          transform: translateY(0);
+      }
+  }
+  
+ /* mainslide */
+ .fullhop{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-wrap: nowrap;
+    
+    /* fw anh hien tren mot hang ko tu dong xuong dong */
+      }
+  .toanhop{
+    box-shadow: 5px 8px 13.92px 2.08px rgb(0 0 0 / 5%);
+    border-radius: 5px;
+    width: 19%;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 420px;    
+  }
+  .anh{
+      height: 900px;
+  }
+  .anhhop{
+      height: 200px;
+      width: 100%;
+  }
+  .hopanh{
+      width: 100%;
+  }
+  .gioithieu{
+      font-size: 18px;
+      font-weight: 400;
+      margin-left: 15px;
+  }
+   .tenhop{
+      font-size: 25px;
+      text-decoration: none;
+      color: black;
+      font-weight: 900;
+      font-family: 'Gluten', cursive;
+      
+  }
+  .phanxanh{
+      background-color: rgb(66, 204, 238);
+      height: 40px;
+      width: 100%;
+  }
+  .comment{
+     margin-top: 10px; 
+     margin-bottom: 10px;
+     text-align: center;
+
+  }
+  .icon {
+      padding: 10px 8px;
+      color: rgb(245, 240, 240);
+      font-weight: 600;
+      font-size: 20px;
+  }
+  .chuicon{
+      padding: 0 5px;
+      font-weight: 500;
+  }
+  .gia{
+      padding: 0 15px;
+      font-weight: 700;
+  }
+  .gioithieu{
+    font-family: 'Gluten', cursive;
+    margin-bottom: 20px;
+}
+  /* ///////////////// */
+  .sport{
+width: 100%;
+height: 1000px;
+display: flex;
+flex-direction: column;
+flex-wrap: nowrap;
+  }
+  .top{
+     color: rgb(85, 200, 235);
+     font-family: 'Grey Qo', cursive;
+     font-size: 50px;
+     text-align: center;
+  }
+  .tensport{
+    font-family: 'Fleur De Leah', cursive;
+    font-size: 100px;
+    text-align: center;
+  }
+  .video{
+      width: 100%;
+      height: 500px;
+      margin-top: 20px;
+      padding-right: 250px;
+      padding-left: 250px;
+      border: none;
+  }
+  .chunham{
+    margin-top: 20px;
+    font-family: 'Gluten', cursive;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .btun{
+      text-align: center;
+  }
+  .btn{
+    margin:0px auto;
+    width: 300px;
+    margin-top: 30px;
+    height: 80px;
+    background-color:rgb(107, 215, 241);
+    border-radius: 10px;
+  }
+  .view{
+    font-family: 'Gluten', cursive;
+    color: rgb(252, 247, 247);
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 30px;
+  }
+  .review{
+      position: relative;
+      width: 100%;
+      height: 700px;
+      overflow: hidden;
+  }
+  .imgnen{
+      width: 100%;
+      height: 1200px;
+      position: absolute;
+      z-index: 1;
+
+  }
+  .tenreview{
+    font-family: 'Fleur De Leah', cursive;
+    font-size: 90px;
+    text-align: center;
+    position: absolute; 
+    z-index: 6;
+    top:0;
+    color: #fff;
+    left: 35%;
+  }
+  .chunhamtop{
+    position: absolute;
+    font-family: 'Gluten', cursive;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 20px;
+    z-index: 6;
+    top:20%;
+    left: 15%;
+  }
+  .userreview{
+      position: absolute;
+      z-index: 6;
+      width: 100%;
+      display:flex;
+      flex-wrap: nowrap;
+      top:260px;
+      height: 300px;}
+     
+      /* animation: chuyen 9s ease-in; */
+  
+  .user1{
+      width: 100%;
+      border-radius: 10px;
+      margin: 10px 10px;
+      display: block;
+  }
+   .user2{
+    width: 100%;
+    border-radius: 10px;
+    margin: 10px 10px;
+    display: none;
+} 
+  .anhuser{
+      float: left;
+      margin-left: 10px;
+  }
+  .trongtam{
+    font-family: 'Gluten', cursive;
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    text-align: center;
+  }
+  .iconuser{
+      color: rgb(72, 159, 240);
+      margin-bottom: 10px;
+  }
+  
+  .tenuser{
+      font-size: 20px;
+      font-family: 'Gluten', cursive;
+     margin-left: 100px;
+  }
+  .radiogroup{
+      z-index: 6;
+      position: absolute;
+      bottom: 0;
+      left:50%;
+      font-size:100%;
+  }
+ #radio{
+    width: 15px;
+    height: 15px;   
+ }
+ #radio:focus{
+     width: 20px;
+     height: 20px;
+     background-color:blue;
+ }
+ .anhholiday{
+     display: flex;
+   
+     text-align: center;
+ }
+ .contentholiday{
+     margin-bottom: 80px;
+ }
+ .winterholiday{
+     margin-top: 50px;
+     width: 100%;
+     height: 700px;
+    
+ }
+ .holiday__item{
+     
+     height: 300px;
+     width: 100%;
+     margin-left: 20px;
+ }
+ .holidayimg{
+     width: 100px;
+     margin-top: 50px;
+     transition: .8s;
+ }
+ .holidayimg:hover{
+     transform: translateY(-20px);
+ }
+ .holiday__item-header{
+    font-family: 'Gluten', cursive;
+ }
+ /* ============ */
+ .all{
+     width: 100%;
+     height: 600px;
+     display: flex;
+ }
+ .boc{
+     width: 100%;
+     height: 600px;
+     position: relative;
+     overflow: hidden;
+ }
+ .anhmenber{
+     width: 100%;
+     height: 600px;
+     z-index: 1;
+     position: absolute;
+ }
+ .membergiothieu{
+     z-index: 6;
+     position: absolute;
+     width: 100%;
+     bottom: 0;
+     background-color: rgb(50, 211, 252);
+     height: 0px;
+     color: #fff;
+     opacity: 0;
+     transition: all 1s ease-in;
+ }
+ .membername{
+     z-index: 6;
+     font-size: 30px;
+     font-family: 'Gluten', cursive;
+     text-align: center;
+     margin-top: 20px;
+     margin-bottom: 10px;
+ }
+ .chunhamkh{
+     font-size: 20px;
+    text-align: center;
+ }
+ .memberitem{
+     text-align: center;
+     padding: 20px 0px;
+ }
+ .member__itemicon{
+     padding: 0px 10px;
+     font-size: 20px;
+ }
+ .boc:hover .membergiothieu{
+     opacity: 1;
+     height: 200px;
+ }
+ .phanquangcanh{
+     height: 1000px;
+     width: 100%;
+     
+ }
+ .bocnggio{
+     background-color: rgb(50, 211, 252) ;
+     width: 100%;
+     height: 200px;
+     display: flex;
+     flex-wrap: nowrap;
+ }
+ .number-item{
+   
+     width: 100%;
+     color: #fff;
+ }
+ .so{
+     font-size: 50px;
+     text-align: center;
+     margin-top: 50px;
+ }
+ .phuluc{
+     font-family:'Gluten', cursive; 
+     text-align: center;
+     font-size: 30px;
+ }
+ .fullressort{
+    display: flex;
+     width: 100%;
+     height: 500px;
+     margin-top: 100px;
+     overflow: hidden;
+  
+ }
+ .resorttext{
+
+   font-family: 'Bonheur Royale', cursive;
+   font-weight: 600;
+   font-size: 80px;
+   position: absolute;
+   width: 100%;
+   text-align: center;
+   margin-top: 40%;
+   color: #fff;
+   opacity: 1.5;
+ }
+ .resortplace{
+height: 90%;
+width: 100%;
+position: relative;
+margin: 0 30px;
+z-index: 5;
+overflow: hidden;
+border-radius: 50%;
+ }
+ .resortimg{
+     width: 100%;
+     height: 100%;
+     position: absolute;
+     border-radius: 100%;
+     /* filter: blur(0.8px);  */
+     /* filter:blur làm mờ ảnh */
+     transition: 1s ease-in-out;
+ }
+ .themheingt{
+     height: 600px;
+ }
+ 
+ .resortplace:hover .resortimg{
+     transform: scale(1.1);
+ }
+ .sao{
+     color:#fff;
+     margin-top: 13px;
+     margin-left: 13px;
+ }
+ .mausao{
+     background-color:rgb(50, 211, 252);
+     width: 50px;
+     height: 50px;
+     position: absolute;
+     left: 820px;
+     z-index: 6;
+     border-radius: 50%;
+    
+ }
+ /* +++++++++++++++ */
+ .tongthanhcuoi{
+     margin-top: 150px;
+     height: 600px;
+     background-color: rgb(31, 30, 30);
+     display: flex;
+     flex-wrap: nowrap;
+ }
+ .footer{
+display: flex;
+flex-direction: column;
+ }
+ .footer__logo{
+     margin-top: 80px;
+ }
+ .footer__logo-img{
+     width: 200px;
+ }
+ .chunhamft{
+     margin: 10px 0px;
+     color: rgb(145, 144, 144);
+ }
+ .footer__link{
+     margin: 5px 0px;
+     text-decoration: none;
+     color: #fff;    
+ }
+ .footer-icon{
+    padding: 0px 5px;
+    top:5px;
+}
+.footer__subheading{
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+.footer__contact-input{
+    width: 400px;
+    height: 50px;
+    margin-left: 50px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+}
+.fticon{
+color:#000;
+position: absolute;
+padding: 15px 15px;
+}
+.footer__contact-wrap{
+    margin-bottom: 10px;
+    position: relative;
+    background-color: white;
+    overflow: hidden;
+    width: 100%;
+}
+
+.footer__link:hover{
+    color:  rgb(50, 211, 252);;
+}
+.footer__contact-subcrice:hover{
+    background-color: rgb(140, 145, 210);
+    cursor: pointer;
+}
+.footer__contact-subcrice{
+    width: 100%;
+    height: 50px;  
+    background-color:  rgb(50, 211, 252);
+    color: white;
+    font-size: 20px;
+}
+
+.footer__contact{
+    margin-bottom: 5px;
+}
+/* ......... */
+ .footer__heading{
+     color: #fff;
+     font-weight: 600;
+     margin-top: 100px;
+     margin-bottom: 30px;
+     font-size: 25px;
+ }
+ .footerplaceitem{
+     list-style: none;
+     margin-bottom: 15px;
+ }
+ .footer__placename{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+
+ }
+
+ .footer__placeday{
+    text-decoration: none; 
+    color: rgb(145, 144, 144);
+ }
+ /* //////////////////// */
+ .footer__bottom {
+     height: 50px;
+     background-color: rgb(31, 30, 30);
+     width: 100%;
+     text-align: center;
+     color: rgb(145, 144, 144);
+ }
+ .footer__bottom-link{
+     color: #fff;
+     text-decoration: none;
+ }
+ /* Mobile & Tablet */
+@media (max-width: 1023px){
+    .hide-on-mobile-tablet{
+        display: none;
+    }
+    .header{
+        position: fixed;
+        top: 0;
+        z-index: 10;
+        width: 100%;
+        background-color: var(--primary-color);
+        display: flex;
+        justify-content: space-between;
+    
+    }
+    .header__logo {
+        flex: 0;
+        
+    }
+   
+    .mobile-header__logo-img{
+        display: block;
+        height: 46px;
+    }
+    .mobile-header-menu-icon{
+        font-size: 3rem;
+        padding: 20px;
+        color: #fff;
+    }
+    .header__navbar{
+        position: fixed;
+        width: 100%;
+        top: 74px ;
+        left: 0;
+        transform: scaleY(0);
+        -webkit-transform:scaleY(0);
+        transform-origin: top;
+        -webkit-transform-origin: top;
+        transition: .4s;
+        -webkit-transition: .4s;
+
+    }
+
+    .mobile-menu-overlay{
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        display: none;
+    
+    }
+
+    .open{
+        transform: scaleY(1);
+        transition: 1s;
+    }
+
+    .header__navbar-list{
+        display: block;
+        list-style: none;
+        margin: 0;
+        background-color: #fff;
+    }
+    .header__navbar-item{
+        padding: 5px 0;
+        
+    }
+   
+    .header__navbar-link{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .android{
+        display: none;
+    }
+    .header__navbar-item:not(:last-child){
+        border-bottom: 1px solid #ccc;
+
+    }
+    .subnav{
+        right: 0;
+        left: 10%;
+        position: relative;
+        box-shadow: none;
+    }
+    .subnav__item-text{
+        color: #000;
+        
+    }
+    .nav-mobile-icon{
+        font-size: 1.6rem;
+        float: right;
+    }
+    .mySlides-img{
+        height: 100%;
+    }
+    .member__number{
+        height: 100%;
+        margin: 0 auto;
+    }
+    .content__section{
+        padding: 0 30px;
+    }
+    .footer-item{
+        margin-bottom: 60px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+}
+/* QUERIES */
+/* **********************************************?? */
+/* ///////////////////////// */
+/* ============================================================================== */
+
+
+/* Tablet */
+@media (min-width: 740px) and (max-width: 1023px){
+    
+    body{
+        overflow-x: hidden;
+    }
+    .logo{
+        margin-top: 15px;
+        width: 70px;
+        height: 50px;
+    }
+    .header{
+        background-color: #fff;
+    }
+    .hic_a{
+        font-size: 15px;
+    }
+    .no{
+        font-size: 15px;
+    }
+    .topanh{
+        font-size: 50px;
+    }
+    .ndanh{
+        font-size: 70px;
+    }
+    .chunhamnew{
+        font-size: 20px;
+    }
+    .gioithieu{
+        font-size: 15px;
+        text-align: center;
+    }
+    .icon{
+        margin-left: 30px;
+    }
+    .danhgia{
+        margin-left: 40px;
+    }
+    .tenhop{
+        font-size: 15px;
+    }
+    .fullhop{
+        flex-direction: column;
+        height: 1800px;
+    }
+    .toanhop{
+    
+        height: 350px;
+        width: 350px;
+        margin-bottom: 15px;
+    }
+    .anhhop{
+        height: 160px;
+    }
+    .sport{
+        height: 750px;
+    }
+    .top{
+        font-size: 40px;
+    }
+    .tensport{
+        font-size: 50px;
+    }
+    .video{
+        padding-left: 150px;
+        padding-right: 150px;
+        height: 350px;
+    }
+    .chunham{
+        font-size: 15px;
+    }
+   
+    .tenreview{
+        font-size: 50px;
+    }
+    .chunhamtop{
+        margin-top:-45px;
+        font-size: 15px;
+        margin-left: -35px;
+    }
+    .userreview{
+        
+        margin-top: -55px;
+    }
+    .trongtam{
+        font-size: 20px;
+    }
+    .phanquangcanh{
+        height: 550px;
+        width: 100%;
+    }
+    .all{
+        height: 350px;
+    }
+    .boc{
+        height: 350px;
+    }
+    .anhmenber{
+        height: 350px;
+    }
+    .bocnggio{
+        width: 100%;
+        height: 100px;
+        text-align: center;
+    }
+    .number-item{
+        text-align: center;
+        width: 190px;
+        height: 100px;
+    }
+    .so{
+        margin:0 auto;
+        font-size: 30px;
+    }
+    .phuluc{
+        font-size: 20px;
+    }
+    .membergiothieu{
+       bottom: 0;
+    }
+    .membername{
+        font-size: 20px;
+    }
+    .chunhamkh{
+        font-size: 15px;
+    }
+    .fullressort{
+      
+        height: 300px;
+    }
+    .resortplace{
+    
+        height: 300px;
+        width: 350px;
+        margin-left: 2px;
+    }
+    .resorttext{
+        margin-top: 150px;
+        font-size: 50px;
+    }
+    .tongthanhcuoi{
+        width: 100%;
+        flex-direction: column;
+        height: 900px;
+    }
+    .footer__logo{
+        margin:5px;
+        width: 100%;
+        text-align: center;
+    }
+    .footer__logo-img{
+        width: 150px;
+    }
+    .chunhamft{
+        text-align: center;
+        font-size: 20px;
+    }
+    .footer-icon{
+        font-size: 15px;
+    }
+    .footer__link{
+        text-align: center;
+        font-size: 15px;
+    }
+    .footeritem{
+        display: inline;
+        margin-top: 30px;
+    }
+    .footer__heading{
+        font-size: 20px;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .footerplaceitem{
+        text-align: center;
+        font-size: 15px;
+
+    }
+    .footer__placename{
+        font-size: 15px;
+    }
+    .footer__subheading{
+        font-size: 15px;
+        text-align: center;
+    }
+    .footer__contact{
+        width: 550px;
+       margin:0 auto ;
+    }
+    .footer-item{
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
+    }    
+
+}
+
+
+/* Mobile */
+@media  only screen and (max-width: 740px){
+    body{
+     overflow-x: hidden;
+    }
+.header{
+    background-color:#fff;
+    display: flex;
+    flex-wrap: nowrap;  
+    width: 100%;
+}
+.logo{
+    position: absolute;
+    max-width: 150px;
+    max-height: 60px;
+    left: 40px;
+    top:15px;
+}
+.ul_nav{
+   position: absolute;
+   top:80px;
+   width: 300px;
+   height: 100%;   
+   display: none;
+   right:40px;
+}
+.ul_nav.active{
+    display: block;
+}
+.navbar{
+    width: 100%;
+    height: 50px;
+    padding: 10px 0;
+    border-bottom: 1px solid #c53db3;
+    text-align: left;
+    display: block;
+    color: rebeccapurple;
+    background-color: #fff;
+    
+}
+.anr{
+    list-style: none;
+    margin-top: 20px;
+    display: block;
+    right: 80px;
+    position: absolute;
+}
+.no{
+    display: none;
+}
+.android{
+    color: rebeccapurple;
+    display: inline;
+    font-size: 30px;
+  
+    
+}
+.navbar.active{
+    display: block;
+}
+.angleright{
+    position: absolute;
+    display:inline;
+  right: 0%;
+}
+
+.hic_a{
+font-family: cursive,'Gluten';
+color: rebeccapurple;
+}
+.sub{
+    min-width: 280px;
+    list-style: none;
+    text-align:left;
+    font-size: 80%;
+    margin-left: 10px;
+    display: none;
+    padding-left: 60px;
+    z-index: 10;
+}
+#home:hover{
+    min-height: 320px;
+}
+#pages:hover{
+    min-height: 260px;
+}
+#destration:hover,#Tour:hover,#Blog:hover{
+    min-height: 160px;
+}
+#Shop:hover{
+    min-height:200px;
+}
+#elemet:hover{
+    min-height: 230px;
+}
+.topanh{
+    font-size: 40px;
+}
+.ndanh{
+    font-size: 50px;
+}
+.chunhamnew{
+    font-size: 20px;
+}
+.gioithieu{
+    font-size: 15px;
+    text-align: center;
+}
+.icon{
+    margin-left: 30px;
+}
+.danhgia{
+    margin-left: 40px;
+}
+.tenhop{
+    font-size: 15px;
+}
+.fullhop{
+    flex-direction: column;
+    height: 1800px;
+}
+.toanhop{
+    height: 350px;
+    width: 350px;
+    margin-bottom: 15px;
+}
+.anhhop{
+    height: 160px;
+}
+.sport{
+    width: 100%;
+    height: 800px;
+}
+.top{
+    font-size: 40px;
+}
+.tensport{
+    font-size: 50px;
+}
+.video{
+   padding-left: 50px;
+    width: 100%;
+    height: 350px;
+    padding-right: 50px;
+}
+.chunham{
+    font-size: 15px;
+}
+.btn{
+  width: 200px;
+  height: 50px;
+}
+.view{
+    font-size: 20px;
+}
+.tenreview{
+    font-size: 50px;
+}
+.chunhamtop{
+    margin-top:-45px;
+    font-size: 15px;
+}
+.userreview{
+    margin-top: -55px;
+}
+.trongtam{
+    font-size: 20px;
+}
+/* ?????? */
+.review{
+    width: 100%;
+    height: 1000px;
+   flex-wrap: nowrap;
+   position: relative;
+}
+.userreview{
+    position: absolute;
+    z-index: 6;
+    width: 100%;
+    top:260px;
+    right: 0;
+    display: block;
+    height: 700px;}
+.user1{
+    width: 100%;
+    border-radius: 10px;
+    margin: 10px 0px;
+    display: block;
+}
+ .user2{
+  width: 100%;
+  border-radius: 10px;
+  margin: 10px 0px;
+  display: none;
+} 
+
+.tenuser{
+    font-size: 20px;
+}
+#gt{
+height: 100px;
+overflow: hidden;
+}
+.chunham{
+    margin-left: 10px;
+}
+.anhholiday{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.holidayimg{
+    margin: 0 auto;
+}
+.holiday__item{
+    margin: 0 auto;
+    height: 200px;
+   
+}
+.winterholiday{
+    height: 1100px;
+}
+.chunhamtop{
+    left: 20px; 
+   top: 170px;
+}
+.phanquangcanh{
+    width: 100%;
+    height: 1550px;
+}
+.all{
+    height: 1350px;
+    display: flex;
+    flex-direction: column;
+    
+    flex-wrap: nowrap;
+}
+
+.boc{
+  
+    width: 300px;
+    margin: 0 auto;
+    height: 350px;
+    position: relative;
+}
+.anhmenber{
+    width: 300px;
+    height: 350px;
+    z-index: 1;
+    position: absolute;
+}
+.bocnggio{
+    height: 100px;
+}
+.number-item{
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+}
+.so{
+    margin:0 auto;
+    font-size: 30px;
+}
+.phuluc{
+    font-size: 20px;
+}
+.chunhamkh{
+    font-size: 15px;
+}
+.fullressort{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 700px;
+    margin-bottom: 50px;
+}
+.resortplace{
+   
+    height: 300px;
+    width: 300px;
+    margin: 5px auto;
+}
+.resorttext{
+    font-size: 50px;
+}
+.tongthanhcuoi{
+    width: 100%;
+    flex-direction: column;
+    height: 900px;
+}
+.footer__logo{
+    margin:5px;
+    width: 100%;
+    text-align: center;
+}
+.footer__logo-img{
+    width: 150px;
+}
+.chunhamft{
+    text-align: center;
+    font-size: 20px;
+}
+.footer-icon{
+    font-size: 15px;
+}
+.footer__link{
+    text-align: center;
+    font-size: 15px;
+}
+.footeritem{
+    display: inline;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.footer__heading{
+    font-size: 20px;
+    margin-top: 10px;
+    text-align: center;
+}
+.footerplaceitem{
+    text-align: center;
+    font-size: 15px;
+}
+.footer__placename{
+    font-size: 15px;
+}
+.footer__subheading{
+    font-size: 15px;
+    text-align: center;
+}
+.footer__contact{
+    width: 300px;
+   margin:0 auto ;
+}
+.footer-item{
+    width: 100%;
+    text-align: center;
+}
+.fticon{
+font-size: 15px;
+
+}
+.footer__contact-input{
+    border: springgreen 1px solid;
+    font-size: 15px;
+    width:250px;
+    height: 40px;
+
+}
+.footer__contact-subcrice{
+height: 40px;
+}
+}
+
