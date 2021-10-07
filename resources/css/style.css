@@ -6,8 +6,9 @@
 }
 .angleright{display: none;}
 body{
-    max-width: 100%;
+    width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 .anr{
     display: none;
@@ -24,28 +25,16 @@ html{
     border: 1px ridge rgb(246, 250, 246);
     height: 80px;
     width: 100%;
-background-color: #fff;
+    background-color: #fff;
     padding: 0 20px;
     display: flex;
     z-index: 10;
     position: fixed;
 }
-     rendering cach hien thi chu len web
-
-     /***************************STICKY*/
-     /* .sticky{
-         position: fixed;
-         top:0;
-         width: 100%;
-         background-color: #fff;
-         left: 0;
-         z-index: 999; */
-     
      /*************************/
 .logo{
-    width: 50%;
-    height: 20%;
-    flex: 1;
+    width: 200px;
+    height: 80px;
 }
 .ul_nav {
     list-style: none;
@@ -170,6 +159,10 @@ background-color: #fff;
     .menu-modal-in4{
         display: flex;
         flex-direction: column;
+    
+    }
+    .mat{
+        display: none;
     }
     .menu-modal-img{
         margin-top: 40px;
@@ -271,6 +264,9 @@ background-color: #fff;
        overflow: hidden;  
        margin-bottom: 50px;  
        position: relative;   
+   }
+   .hoa{
+       width: 100%;
    }
    .topanh{
        font-size: 80px;
@@ -819,88 +815,13 @@ padding: 15px 15px;
      color: #fff;
      text-decoration: none;
  }
- /* Mobile & Tablet */
-@media (max-width: 1023px){
-    .hide-on-mobile-tablet{
-        display: none;
-    }
-    .header{
-        position: fixed;
-        top: 0;
-        z-index: 10;
-        width: 100%;
-        background-color: var(--primary-color);
-        display: flex;
-        justify-content: space-between;
-    
-    }
-    .header__logo {
-        flex: 0;
-        
-    }
-   
-    .mobile-header__logo-img{
-        display: block;
-        height: 46px;
-    }
-    .mobile-header-menu-icon{
-        font-size: 3rem;
-        padding: 20px;
-        color: #fff;
-    }
-    .header__navbar{
-        position: fixed;
-        width: 100%;
-        top: 74px ;
-        left: 0;
-        transform: scaleY(0);
-        -webkit-transform:scaleY(0);
-        transform-origin: top;
-        -webkit-transform-origin: top;
-        transition: .4s;
-        -webkit-transition: .4s;
+ .footerit{
+     display: flex;
+     flex-direction: column;
 
-    }
-
-    .mobile-menu-overlay{
-        position: fixed;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
-        display: none;
-    
-    }
-
-    .open{
-        transform: scaleY(1);
-        transition: 1s;
-    }
-
-    .header__navbar-list{
-        display: block;
-        list-style: none;
-        margin: 0;
-        background-color: #fff;
-    }
-    .header__navbar-item{
-        padding: 5px 0;
-        
-    }
-   
-    .header__navbar-link{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .android{
-        display: none;
-    }
-    .header__navbar-item:not(:last-child){
-        border-bottom: 1px solid #ccc;
-
-    }
+ }
+ /*  Tablet */
+@media only screen and (max-width: 1023px){ 
     .subnav{
         right: 0;
         left: 10%;
@@ -910,6 +831,9 @@ padding: 15px 15px;
     .subnav__item-text{
         color: #000;
         
+    }
+    .phanload{
+        display: none;
     }
     .nav-mobile-icon{
         font-size: 1.6rem;
@@ -940,10 +864,6 @@ padding: 15px 15px;
 
 /* Tablet */
 @media screen and (max-width: 1023px){
-    
-    body{
-        overflow-x: hidden;
-    }
     .logo{
         margin-top: 15px;
         width: 70px;
@@ -1142,10 +1062,8 @@ padding: 15px 15px;
 
 
 /* Mobile */
-@media  screen and (max-width: 740px){
-    body{
-     overflow-x: hidden;
-    }
+@media only screen and (max-width: 740px){
+ 
 .header{
     background-color:#fff;
     display: flex;
